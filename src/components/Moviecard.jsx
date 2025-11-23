@@ -18,7 +18,7 @@ const Moviecard = ({ movie }) => {
         alt={movie.title}
         className='w-full h-64 object-cover rounded-md mb-2 flex-shrink-0'  // Fixed h-64 (256px) and flex-shrink-0 to prevent shrinking
       />
-      <h3 className='text-lg font-bold mb-1 truncate'>{movie.title}</h3>  // Added truncate to cut off long titles
+      <h3 className='text-lg font-bold mb-1 truncate'>{movie.title}</h3>  
       <p className='text-sm text-gray-400 mb-2'>{movie.release_date}</p>
       <div className='flex items-center mb-3'>
         <FaStar className='text-yellow-500 mr-1' />
