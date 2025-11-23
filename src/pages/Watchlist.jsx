@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { motion } from 'framer-motion';
 import GenreFilter from '../components/GenreFilter.jsx';
 import { WatchListContext } from '../context/WatchListContext.jsx';
-import Moviecard from '../components/MovieCard.jsx';
+import Moviecard from '../components/Moviecard.jsx';
 
 const Watchlist = () => {
     const { watchList, genreList } = useContext(WatchListContext);
