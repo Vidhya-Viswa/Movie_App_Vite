@@ -21,20 +21,9 @@ const Home = () => {
     return (
         <div className='p-4 pt-10'>
 
-            {/* Hero Section */}
-            <motion.section
-                className="text-center py-8 mb-4 mt-4"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.7 }}
-            >
-                <h1 className="text-5xl font-bold mb-4 text-red-500">Discover Blockbusters</h1>
-                <p className="text-xl mb-3 text-gray-300">Search and explore the latest hits.</p>
-            </motion.section>
-
             {/* Search Bar */}
             <motion.div
-                className="sticky top-4 z-10 flex justify-center w-full"
+                className="top-20 z-10 flex justify-center w-full fixed"
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -46,6 +35,19 @@ const Home = () => {
                     onChange={(e) => setSearch(e.target.value)}
                 />
             </motion.div>
+
+            {/* Hero Section */}
+            <motion.section
+                className="text-center py-8 mb-4 mt-24"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.7 }}
+            >
+                <h1 className="text-5xl font-bold mb-4 text-red-500">Discover Blockbusters</h1>
+                <p className="text-xl mb-3 text-gray-300">Search and explore the latest hits.</p>
+            </motion.section>
+
+            
 
             {/* Movie Grid */}
             <motion.div
